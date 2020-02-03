@@ -28,7 +28,10 @@ from plotly import offline
 
 data = [{'type': 'scattergeo', 
     'lon': lons, 'lat': lats, 
-    'marker': {'color': bright, 'colorbar': {'title': 'Brightness'}}}]
+    'marker': 
+        {'color': bright, 
+        'colorbar': 
+            {'title': 'Brightness'}}}]
 
 
 my_layout = Layout(title="Australian Wildfires")

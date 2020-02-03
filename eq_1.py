@@ -31,7 +31,9 @@ print(mags[:10])
 from plotly.graph_objs import Scattergeo,Layout
 from plotly import offline
 
-data = [Scattergeo(lon=lons,lat=lats)]
+#data = [Scattergeo(lon=lons,lat=lats)]
+
+data = [{'type':'scattergeo','lon':lons,'lat':lats,'marker':{'size':5*mag for mag in mags}}]
 
 my_layout = Layout(title="Global Earthquakes")
 
